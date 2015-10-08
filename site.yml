@@ -1,4 +1,4 @@
-- name: Install all packeges
+- name: Install all packages
   hosts: webservers
   user: root
   sudo: no

@@ -1,1 +1,6 @@
-remote_user = root
+- name: Install all packeges
+  hosts: webservers
+  user: root
+  sudo: no
+  roles:
+    - mysql

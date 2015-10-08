@@ -4,5 +4,5 @@
  - name: start Mysql
    service: name=mysqld state=started
  - name: Install mysql
-   yum: name=mysql state=present
+   yum: name=mysql state=absent
  

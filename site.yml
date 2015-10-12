@@ -1,6 +1,9 @@
 - name: Install all packages
   hosts: webservers
+  vars:
+    gen_by_an: Ansible
   user: root
   sudo: no
   roles:
     - mysql
+    - httpd

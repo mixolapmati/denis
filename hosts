@@ -20,7 +20,7 @@
 [webservers]
 #alpha.example.org
 #beta.example.org
-#192.168.1.100
+#192.168.1.1gen_by_an=Ansible
 #192.168.1.110
 #epbyminw3139t3.minsk.epam.com
 10.6.86.113

@@ -1,0 +1,5 @@
+---
+ - name: Install httpd
+   yum: name=httpd state=present
+ - name: Create file
+   template: src=t.f.j2 dest=/opt/t.file

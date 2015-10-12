@@ -5,4 +5,3 @@
    yum: name=mysql state=present
  - name: Start mysqld
    service: name=mysqld state=started
- 

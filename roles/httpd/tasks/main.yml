@@ -4,7 +4,7 @@
    notify:
    - start httpd
  - name: httpd.conf
-   template: src=httpd.conf dest=/etc/httpd/conf/httpd.conf
+   template: src=httpd.conf.j2 dest=/etc/httpd/conf/httpd.conf
    notify:
    - restart httpd
  - name: Create file

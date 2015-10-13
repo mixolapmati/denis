@@ -2,11 +2,11 @@
  - name: Install httpd
    yum: name=httpd state=present
    notify:
-   - start httpd
+    - start httpd
  - name: httpd.conf
    copy: src=httpd.conf dest=/etc/httpd/conf/httpd.conf
    notify:
-   - restart httpd
+    - restart httpd
  - name: Create files
-   template: src=t.f.j2 dest=/var/www/html/index.html
    copy: src=Sudoku_free.jar dest=/var/www/html/Sudoku_free.jar
+   #template: src=t.f.j2 dest=/var/www/html/index.html

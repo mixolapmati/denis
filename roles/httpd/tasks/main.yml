@@ -1,7 +1,17 @@
 ---
  - name: Install httpd
    yum: name=httpd state=present
+   notify:
+   - start httpd
+ - name: httpd.conf
+   file: path=/etc/httpd/conf/httpd.conf src=httpd 
+   notify:
+   - restart httpd
  - name: Create file
    template: src=t.f.j2 dest=/var/www/html/index.html
- - name: Start httpd
-   service: name=httpd state=started
+ handlers:
+   - name: start httpd
+     service: name=httpd state=started
+   - name: restart httpd
+     service: name=httpd state=restarted
+

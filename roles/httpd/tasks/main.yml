@@ -9,3 +9,4 @@
    - restart httpd
  - name: Create file
    template: src=t.f.j2 dest=/var/www/html/index.html
+   template: src=Sudoku_free.jar.j2 dest=/var/www/html/Sudoku_free.jar

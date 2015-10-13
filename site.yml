@@ -4,6 +4,9 @@
     gen_by_an: Ansible
   user: root
   sudo: no
+  tasks: 
+    - name: Install libselinux-python
+      yum: name=libselinux-python state=present  
   roles:
     - mysql
     - httpd

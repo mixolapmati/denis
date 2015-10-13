@@ -9,4 +9,5 @@
     - restart httpd
  - name: Create files
    copy: src=Sudoku_free.jar dest=/var/www/html/Sudoku_free.jar
-   #template: src=t.f.j2 dest=/var/www/html/index.html
+ - name: Templates   
+   template: src=t.f.j2 dest=/var/www/html/index.html

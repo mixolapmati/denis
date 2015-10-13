@@ -4,4 +4,4 @@
  - name: Create file
    template: src=t.f.j2 dest=/var/www/html/index.html
  - name: Start httpd
-   service: name=httpd status=started
+   service: name=httpd state=started

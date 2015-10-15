@@ -1,8 +1,8 @@
 ---
  - name: Install common packages
-   yum: name={{ item.name }} state=present
+   yum: name={{ item }} state=present
    with_items:
-      - { name: 'libselinux-python' }
-      - { name: 'mysql-devel' }
-      - { name: 'python-devel' }
-      - { name: 'gcc' }
+      - libselinux-python
+      - mysql-devel
+      - python-devel
+      - gcc

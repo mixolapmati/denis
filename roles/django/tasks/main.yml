@@ -1,0 +1,7 @@
+---
+ - name: Install django
+   pip: name=django
+ - name: Install mysql-connector-python
+   pip: name=mysql-connector-python
+ - name: Prepair database
+ - script: t.sh

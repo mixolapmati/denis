@@ -1,5 +1,8 @@
 ---
- - name: Install libselinux-python
-   yum: name=libselinux-python state=present
- - name: Install GCC
-   yum: name=gcc state=present 
+ - name: Install common packages
+   yum: name={{ item }} state=present
+   with_items:
+      - libselinux-python
+      - mysql-dev
+      - python-dev
+      - gcc

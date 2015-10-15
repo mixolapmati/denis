@@ -1,6 +1,6 @@
 ---
  - name: Install django
-   pip: name=django
- - name: Install mysql-connector-python
-   pip: name=mysql-connector-repackaged version=1.4 state=present
+   pip: name=django version=1.4
+ - name: Install mysql-connector-repackaged
+   pip: name=mysql-connector-repackaged
  - script: t.sh

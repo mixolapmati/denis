@@ -2,6 +2,7 @@
   hosts: webservers
   vars:
     gen_by_an: Ansible
+    django_site: denis
   user: root
   sudo: no
   roles:

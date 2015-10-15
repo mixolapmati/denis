@@ -3,4 +3,4 @@
    pip: name=django version=1.4
  - name: Install mysql-connector-repackaged
    pip: name=mysql-connector-repackaged
- - script: t.sh
+ - script: t.sh {{ django_site }}

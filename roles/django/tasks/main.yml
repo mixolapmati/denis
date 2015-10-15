@@ -2,6 +2,5 @@
  - name: Install django
    pip: name=django
  - name: Install mysql-connector-python
-   pip: name=mysql-connector-python
- - name: Prepair database
+   pip: name=mysql-connector-repackaged version=1.4 state=present
  - script: t.sh

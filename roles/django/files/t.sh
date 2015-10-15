@@ -1,3 +1,3 @@
 #!/bin/bash
 echo $PWD
-mysql -e "CREATE DATABASE dj IF NOT EXISTS CHARACTER SET utf8"
+mysql -e "CREATE DATABASE IF NOT EXISTS dj CHARACTER SET utf8"

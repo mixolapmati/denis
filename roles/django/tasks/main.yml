@@ -2,5 +2,7 @@
  - name: Install django
    pip: name=django version=1.4
  - name: Install mysql-connector-repackaged
-   pip: name=mysql-connector-repackaged
+   pip: name=mysqlclient
  - script: t.sh {{ django_site }}
+ - name: Configure django
+   template: src=settings.py.j2 dest={{django_site}}/{{django_site}}/settings.py

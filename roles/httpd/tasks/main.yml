@@ -1,6 +1,6 @@
 ---
  - name: Install httpd
-   yum: name=httpd state=present
+   apt: name=httpd state=present
    notify:
     - start httpd
  - name: httpd.conf

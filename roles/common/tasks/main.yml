@@ -1,6 +1,6 @@
 ---
  - name: Install common packages
-   yum: name={{ item }} state=present
+   apt: name={{ item }} state=present
    with_items:
       - libselinux-python
       - mysql-dev

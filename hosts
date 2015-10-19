@@ -22,8 +22,8 @@
 #beta.example.org
 #192.168.1.1gen_by_an=Ansible
 #192.168.1.110
-epbyminw3139t3.minsk.epam.com
-10.6.86.113
+#epbyminw3139t3.minsk.epam.com
+10.6.87.37
 
 # If you have multiple hosts following a pattern you can specify
 # them like this:

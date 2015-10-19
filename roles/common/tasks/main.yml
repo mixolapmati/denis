@@ -3,6 +3,7 @@
    yum: name={{ item }} state=present
    with_items:
       - libselinux-python
-      - mysql-devel
-      - python-devel
+      - mysql-dev
+      - python-dev
+      - python-pip
       - gcc

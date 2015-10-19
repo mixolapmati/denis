@@ -1,6 +1,7 @@
 #!/bin/bash
 DATE=`date`
 #https://www.python.org/ftp/python/3.5.0/Python-3.5.0.tgz
+iptables -A INPUT -p tcp --dport 8000 -j ACCEPT
 mysql -e "CREATE DATABASE IF NOT EXISTS $1 CHARACTER SET utf8"
 if [ ! -d $1 ]
 	then

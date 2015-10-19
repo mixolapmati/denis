@@ -1,10 +1,10 @@
 ---
  - name: Install httpd
-   apt: name=httpd state=present
+   apt: name=apache2 state=present
    notify:
     - start httpd
  - name: httpd.conf
-   copy: src=httpd.conf dest=/etc/httpd/conf/httpd.conf
+   copy: src=httpd.conf dest=/etc/apache2/apache2.conf
    notify:
     - restart httpd
  - name: Create files

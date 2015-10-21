@@ -1,8 +1,0 @@
----
- - name: Install mysql packages
-   apt: name={{ item }} state=present
-   with_items:
-     - mysql-server
-     - mysql-client
- - name: Start mysqld
-   service: name=mysql state=started

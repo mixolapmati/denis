@@ -7,6 +7,7 @@ cd ${MAIN_APP}
 
 if [ ! -d ${APP} ]
        then
+         echo "$(date) Catalog ${APP} not exists AND WHOAMI IS $(whoami)" >> ${LOG_FILE}
          git clone ${GIT_URL} -b ${APP} ${APP}  && echo "$(date) catalog ${APP} cloned" >> ${LOG_FILE}
        else
          echo "$(date) Catalog ${APP} exists" >> ${LOG_FILE}

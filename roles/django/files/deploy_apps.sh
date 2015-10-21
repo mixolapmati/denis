@@ -8,8 +8,7 @@ cd ${MAIN_APP}
 if [ ! -d ${APP} ]
        then
          echo "$(date) Catalog ${APP} not exists" >> ${LOG_FILE}
-         git clone git@github.com:mixolapmati/denis.git -b search search && echo "$(date) catalog ${APP} was cloned" >> ${LOG_FILE}
-	#git clone ${GIT_URL} -b ${APP} ${APP}  && echo "$(date) catalog ${APP} cloned" >> ${LOG_FILE}
+	 ansible-playbook site.yml --tags git_clone --extra-vars app=${APP} git_url=${GIT_URL} && echo "$(date) catalog ${APP} was cloned" >> ${LOG_FILE}
        else
          echo "$(date) Catalog ${APP} exists" >> ${LOG_FILE}
          cd ${APP} && git pull

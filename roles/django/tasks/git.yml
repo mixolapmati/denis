@@ -1,0 +1,6 @@
+---
+ - git: repo=ssh://{{ git_url }}
+        remote=denis
+        dest=app
+        refspec=refs/remotes/denis/search
+   tags: git_clone

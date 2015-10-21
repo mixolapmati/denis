@@ -7,7 +7,7 @@
     django_engine_db: mysql
     apps: 
        search: 
-          git_url: git@git.epam.com:mikhail_mikhalap/ansible-centos6-6.git
+          git_url: git@github.com:mixolapmati/denis.git
   user: root
   sudo: no
   roles:

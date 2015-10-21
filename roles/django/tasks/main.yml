@@ -10,3 +10,5 @@
      - deploy_apps
  - name: Configure django
    template: src=settings.py.j2 dest={{django_site}}/{{django_site}}/settings.py
+   tags:
+     - config_dj

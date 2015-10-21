@@ -1,7 +1,14 @@
 MAIN_APP=$1
 APP=$2
 GIT_URL=$3
-#git clone $GIT_URL -b $APP
+
 cd $MAIN_APP
-echo "PWD: $PWD, $(ls -lsa),  git clone $GIT_URL -b $APP" >> log_django 
+
+if [ ! -d $APP ]
+       then
+         git clone $GIT_URL -b $APP $APP  && echo "$(date) catalog $APP cloned" >> log_django
+       else
+         echo "$DATE Catalog $APP exists" >> log_django
+fi
+
 #python manage.py makemigrations {{ apps }}

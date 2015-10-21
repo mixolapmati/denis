@@ -7,3 +7,4 @@
       - python-pip
       - python-dev
       - libmysqld-dev
+      - git

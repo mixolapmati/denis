@@ -1,5 +1,5 @@
 - name: Install all packages
-  command: echo "$(date) Start deploy" >> {{ log_file }}
+  #command: echo "$(date) Start deploy" >> {{ log_file }}
   hosts: webservers
   vars:
     log_file: /root/log_django

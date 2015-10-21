@@ -6,7 +6,7 @@
     django_engine_db: mysql
     apps: 
        search: 
-          git_url: someURL
+          git_url: 
   user: root
   sudo: no
   roles:

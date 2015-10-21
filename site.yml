@@ -4,6 +4,9 @@
     gen_by_an: Ansible
     django_site: denis
     django_engine_db: mysql
+    apps: 
+       search: 
+          git_url: someURL
   user: root
   sudo: no
   roles:

@@ -3,8 +3,8 @@
    pip: name=django
  - name: Install mysql-connector
    pip: name=mysqlclient
- - script: t.sh {{ django_site }} 
- - script: deploy_apps.sh {{ django_site }} {{ item.key }} {{ item.value.git_url }}
+ - script: t.sh {{ django_site }} {{ log_file }}
+ - script: deploy_apps.sh {{ django_site }} {{ item.key }} {{ item.value.git_url }} {{ log_file }}
    with_dict: "{{ apps }}"
    tags:
      - deploy_apps

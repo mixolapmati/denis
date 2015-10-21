@@ -1,6 +1,7 @@
 - name: Install all packages
   hosts: webservers
   vars:
+    log_file: /root/log_django
     gen_by_an: Ansible
     django_site: denis
     django_engine_db: mysql
